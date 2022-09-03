@@ -15,17 +15,17 @@ printf("Enter the value of angular frequency\n");
 scanf("%lf", &W);
 X1=W*L;
 X2=1/(W*C);
-printf("The value of inductive reactance is %lf",X1);
-printf("The value of capacitive reactance is %lf",X2);
+printf("The value of inductive reactance is %lf\n",X1);
+printf("The value of capacitive reactance is %lf\n",X2);
 if(X1==X2)
 {
 F=1/(2*pi*sqrt(L*C));
 Q=(sqrt(L*1/C))/R;
-printf("The circuit is at resonance and its resonance frequency is %lf", F);
-printf("The quality factor of LCR circuit is %lf", Q);
+printf("The circuit is at resonance and its resonance frequency is %lf\n", F);
+printf("The quality factor of LCR circuit is %lf\n", Q);
 }
 else
-printf("The circuit is not at resonance");
+printf("The circuit is not at resonance\n");
 getch();
-return 0;
+
 }
